@@ -1,16 +1,16 @@
-# 🔥 LA Wildfire Risk Prediction using Ensemble Learning
+# LA Wildfire Risk Prediction using Ensemble Learning
 
 This project forecasts daily wildfire risks in Los Angeles County using a stacked ensemble of Random Forest, XGBoost, and SVM models. It integrates weather data, satellite imagery, and historical fire records to generate reliable early warnings and support proactive wildfire management.
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 Wildfires have devastating impacts on the environment, human life, and property. To reduce these risks, this machine learning pipeline uses historical fire occurrences and climate data to predict future wildfire events. Ensemble learning helps improve robustness and predictive performance.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language**: Python 3.10  
 - **Data Libraries**: `pandas`, `numpy`, `scipy`, `tqdm`  
@@ -23,11 +23,11 @@ Wildfires have devastating impacts on the environment, human life, and property.
 - **Notebook Tools**: `jupyter`, `ipywidgets`, `notebook`  
 - **Environment Management**: `python-dotenv`
 
-> 📦 All dependencies are listed in `requirements.txt`.
+> All dependencies are listed in `requirements.txt`.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 1_preprocess.ipynb                    # Clean and prepare raw datasets
@@ -47,21 +47,21 @@ README.md                             # Project documentation
 
 ---
 
-## 🔍 Methodology
+## Methodology
 
-### 🔹 Data Sources
+### Data Sources
 - **CAL FIRE**: Wildfire incident history  
 - **NOAA**: Daily weather observations (temperature, humidity, wind speed)  
 - **MODIS**: Satellite-derived vegetation indices (NDVI) and surface temperatures (LST)
 
-### 🔹 Data Processing
+### Data Processing
 - Log transformations and PCA
 - Winsorization to handle outliers
 - KNN imputation for missing values (tuned with optimal `k`)
 - SMOTE–Tomek sampling to balance fire/no-fire labels
 - Feature engineering: Dryness Score, Spread Score, NDVI deviation
 
-### 🔹 Models Used
+### Models Used
 - Random Forest  
 - XGBoost  
 - Support Vector Machine (RBF kernel)  
@@ -69,7 +69,7 @@ README.md                             # Project documentation
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 | Metric              | Value    |
 |---------------------|----------|
@@ -81,7 +81,7 @@ README.md                             # Project documentation
 
 ---
 
-## 🌍 Impact
+##  Impact
 
 This model can:
 - Optimize the allocation of firefighting resources
@@ -91,7 +91,7 @@ This model can:
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. **Clone the repo**:
    ```bash
@@ -117,14 +117,14 @@ This model can:
 
 ---
 
-## 👨‍💻 Contributors
+##  Contributors
 
 - **Sai Kiran Reddy Pothuganti**  
 - **Vivek Varma Rudraraju**
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Integrate real-time weather and satellite APIs  
 - Add features based on land use and human activity  
@@ -133,7 +133,7 @@ This model can:
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute with proper credit.
